@@ -25,6 +25,7 @@ function App() {
 
   const handleFbSubmit = async (e) => {
     e.preventDefault();
+    try{
     setFbForm({ ...fbForm, [e.target.name]: e.target.value });
     await send(
       "service_ajm6dic",
@@ -37,8 +38,12 @@ function App() {
       name: '',
       email: '',
       message: '',
+      console.log("Message Send Successfully!");
     })
-    
+    }
+    catch(error){
+      console.log("Server Error, Please Try After Some Time");
+    }
     setTimeout(() => setFbSuccess(false), 3000)
     setFbError('');
 
