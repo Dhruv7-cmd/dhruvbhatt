@@ -27,10 +27,10 @@ function App() {
     e.preventDefault();
     setFbForm({ ...fbForm, [e.target.name]: e.target.value });
     await send(
-      "service_276y58n",
-      "template_fn5tkxr",
+      "service_ajm6dic",
+      "template_ervwr1k",
       fbForm,
-      "0WYy0lKbcw3mmQ_7R"
+      "1YUsWhwYD2tKev7TT"
     );
     setFbSuccess(true);
     setFbForm({
@@ -275,7 +275,7 @@ function App() {
             <p className="mb-2 text-light">
               LinkedIn:{" "}
               <a
-                href="https://linkedin.com/in/dhruvbhatt"
+                href="http://linkedin.com/in/dhruv-bhatt-0a0575321"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent"
