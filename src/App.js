@@ -108,7 +108,7 @@ function App() {
           />
           <h1>Dhruv Bhatt</h1>
           <p className="lead accent-text">
-            AI/ML Developer | PHP | Python | ML
+            AI/ML Developer | Python 
           </p>
           <a href="#projects" className="btn btn-accent mt-3">
             View Projects
