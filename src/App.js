@@ -28,7 +28,7 @@ function App() {
     try{
     setFbForm({ ...fbForm, [e.target.name]: e.target.value });
     await send(
-      "service_ajm6dic",
+      "service_6c6d7oj",
       "template_d01n7kl",
       fbForm,
       "QCW-7jYjLcnHYeOcY"
