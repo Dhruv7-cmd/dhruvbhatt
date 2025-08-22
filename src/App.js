@@ -286,7 +286,7 @@ function App() {
             <p className="mb-0 text-light">
               GitHub:{" "}
               <a
-                href="https://github.com/dhruvbhatt"
+                href="https://github.com/Dhruv7-cmd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent"
