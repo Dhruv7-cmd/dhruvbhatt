@@ -25,8 +25,8 @@ function App() {
 
   const handleFbSubmit = async (e) => {
     e.preventDefault();
-    try{
     setFbForm({ ...fbForm, [e.target.name]: e.target.value });
+    try{
     await send(
       "service_6c6d7oj",
       "template_euvzxdf",
@@ -38,12 +38,14 @@ function App() {
       name: '',
       email: '',
       message: '',
-      console.log("Message Send Successfully!");
     })
-    }
-    catch(error){
-      console.log("Server Error, Please Try After Some Time");
-    }
+    setFbSuccess(true);
+    setFbError("Thank you for your feedback! I'll get back to you soon.");
+  } catch (error) {
+    setFbSuccess(false);
+    setFbError("Failed to send feedback. Please try again later.");
+  }
+    
     setTimeout(() => setFbSuccess(false), 3000)
     setFbError('');
 
@@ -113,7 +115,7 @@ function App() {
           />
           <h1>Dhruv Bhatt</h1>
           <p className="lead accent-text">
-            AI/ML Developer | Python 
+            AI/ML Developer | PHP | Python | ML
           </p>
           <a href="#projects" className="btn btn-accent mt-3">
             View Projects
@@ -354,8 +356,7 @@ function App() {
                 Send Message
               </button>
             </form>
-            <p>{fbSufccess}</p>
-            <p>{fbError}</p>
+            {fbSufccess && <p className="text-white text-center py-3">{fbError}</p>}
           </div>
         </div>
       </section>
