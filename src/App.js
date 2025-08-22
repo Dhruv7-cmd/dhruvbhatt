@@ -28,9 +28,9 @@ function App() {
     setFbForm({ ...fbForm, [e.target.name]: e.target.value });
     await send(
       "service_ajm6dic",
-      "template_ervwr1k",
+      "template_d01n7kl",
       fbForm,
-      "sHjtgQBxGgmGxZJUZo9pg"
+      "QCW-7jYjLcnHYeOcY"
     );
     setFbSuccess(true);
     setFbForm({
